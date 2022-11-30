@@ -15,7 +15,6 @@ from datetime import date
 import requests
 
 
-from bdi_website.params import BASE_PROJECT_PATH
 
 # - - - Title - - -
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
