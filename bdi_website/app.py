@@ -108,16 +108,17 @@ SYMB = window_selection_c.selectbox("Select Index", STOCK)
 
 
 #Features:
+
 BDI_path = os.path.join(BASE_PROJECT_PATH, "bdi_website", "streamlit_data", "cleaned_weekly_BDI.csv")
 CIP_path = os.path.join(BASE_PROJECT_PATH, "bdi_website", "streamlit_data", "weekly_cleaned_cip.csv")
 NICKEL_path = os.path.join(BASE_PROJECT_PATH, "bdi_website", "streamlit_data", "cleaned_important_features_data.csv")
 
 if SYMB=='BDI':
-    data=pd.read_csv(BDI_path)
+    data=pd.read_csv("../streamlit_data/cleared_weekly_BDI.csv")
 elif SYMB=='CIP - YoY':
-    data=pd.read_csv(CIP_path)
+    data=pd.read_csv("../streamlit_data/cleaned_weekly_CIP.csv")
 elif SYMB=="Nickel - Global Price":
-    data=pd.read_csv(NICKEL_path)
+    data=pd.read_csv("../streamlit_data/cleanred_important_features_data.csv")
 
 
 
