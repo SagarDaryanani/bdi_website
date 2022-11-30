@@ -15,6 +15,8 @@ from datetime import date
 import requests
 
 
+from bdi_website.params import BASE_PROJECT_PATH
+
 # - - - Title - - -
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
@@ -106,12 +108,9 @@ SYMB = window_selection_c.selectbox("Select Index", STOCK)
 
 
 #Features:
-BDI_path = "../streamlit_data/cleared_weekly_BDI.csv"
-#os.path.join(BASE_PROJECT_PATH, "streamlit_data", "cleaned_weekly_BDI.csv")
-CIP_path = "../streamlit_data/cleaned_weekly_CIP.csv"
-#os.path.join(BASE_PROJECT_PATH, "streamlit_data", "cleaned_weekly_CIP.csv")
-NICKEL_path = "../streamlit_data/cleanred_important_features_data.csv"
-#os.path.join(BASE_PROJECT_PATH, "streamlit_data", "cleaned_important_features_data.csv")
+BDI_path = os.path.join(BASE_PROJECT_PATH, "bdi_website", "streamlit_data", "cleaned_weekly_BDI.csv")
+CIP_path = os.path.join(BASE_PROJECT_PATH, "bdi_website", "streamlit_data", "weekly_cleaned_cip.csv")
+NICKEL_path = os.path.join(BASE_PROJECT_PATH, "bdi_website", "streamlit_data", "cleaned_important_features_data.csv")
 
 if SYMB=='BDI':
     data=pd.read_csv(BDI_path)
