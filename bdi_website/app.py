@@ -14,8 +14,8 @@ from datetime import date
 
 import requests
 
+from bdi_website.app import BASE_PROJECT_PATH
 
-from bdi_predict.ml_logic.params import BASE_PROJECT_PATH
 
 # - - - Title - - -
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
