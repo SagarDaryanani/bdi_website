@@ -14,7 +14,9 @@ from datetime import date
 
 import requests
 
+
 from bdi_website.params import BASE_PROJECT_PATH
+
 
 
 # - - - Title - - -
