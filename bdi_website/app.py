@@ -14,6 +14,7 @@ from datetime import date
 
 import requests
 
+
 # - - - Title - - -
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
