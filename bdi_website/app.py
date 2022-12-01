@@ -111,11 +111,11 @@ SYMB = window_selection_c.selectbox("Select Index", STOCK)
 
 
 if SYMB=='BDI':
-    data=pd.read_csv("../streamlit_data/cleaned_weekly_BDI.csv")
+    data=pd.read_csv("./streamlit_data/cleaned_weekly_BDI.csv")
 elif SYMB=='CIP - YoY':
-    data=pd.read_csv("../streamlit_data/weekly_cleanred_cip.csv")
+    data=pd.read_csv("./streamlit_data/weekly_cleanred_cip.csv")
 elif SYMB=="Nickel - Global Price":
-    data=pd.read_csv("../streamlit_data/cleaned_important_features_data.csv")
+    data=pd.read_csv("./streamlit_data/cleaned_important_features_data.csv")
 
 
 
